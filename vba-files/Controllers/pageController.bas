@@ -11,15 +11,15 @@ Attribute VB_Name = "pageController"
 '
 '@return void
 '*/
-Public  Sub index()
+Public Sub index()
 
-  'XVBA auto-complete just work with namespace like "pageView"  
+  'XVBA auto-complete just work with namespace like "pageView"
   Call pageView.publish
 End Sub
 
 '/*
 '
-'Test VBA Immediate Window Simulate 
+'Test VBA Immediate Window Simulate
 '
 '*/
 Public Sub testXdebugPrint()
@@ -45,10 +45,10 @@ Public Sub testXdebugPrintError()
   
   On Error GoTo ErrorHandle:
     'throw an error
-    d = 1/0
+    d = 1 / 0
    'Your code here
   
-  ErrorHandle:
+ErrorHandle:
     Xdebug.errorSource = "pageConsoller.index"
     Xdebug.printError
    

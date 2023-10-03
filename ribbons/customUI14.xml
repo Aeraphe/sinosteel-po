@@ -44,9 +44,20 @@
           <button id="btn3_auth" label="Meus dados" imageMso="AddressBook" size="normal" onAction="MyRibbon.showUserInfoForm" />
         </group>
 
+
         <group id="user" label="Usuarios">
           <button id="btn1_user" label="Catastrar" imageMso="DataFormAddRecord" size="normal" onAction="MyRibbon.showAddUserForm" />
           <button id="btn2_user" label="Listar" imageMso="BulletListDefault" size="normal" onAction="MyRibbon.showAllUsersForm" />
+        </group>
+
+        <group id="project" label="Projetos">
+          <button id="btn1_project" label="Catastrar" imageMso="DataFormAddRecord" size="normal" onAction="MyRibbon.showAddProject" />
+          <button id="btn2_project" label="Listar" imageMso="BulletListDefault" size="normal" onAction="MyRibbon.showListProjects" />
+        </group>
+
+        <group id="suppliers" label="Fornecedores">
+          <button id="btn1_suppliers" label="Catastrar" imageMso="DataFormAddRecord" size="normal" onAction="MyRibbon.showAddSuppliers" />
+          <button id="btn2_suppliers" label="Listar" imageMso="BulletListDefault" size="normal" onAction="MyRibbon.showListSuppliers" />
         </group>
 
                 

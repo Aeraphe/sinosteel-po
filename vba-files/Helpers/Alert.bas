@@ -6,12 +6,16 @@ Attribute VB_Name = "Alert"
 
 '/*
 '
-'This comment block is used by XVBA to
-' show the sub info
 '
-'@return void
+'
 '*/
-Public  Sub Show()
-  Call Xlog.message(0,"Run Alert Show Sub")
-  MsgBox "Alert",,"title" 
-End Sub
+Public Function Show(title As String, description As String, delay As Long)
+
+  UserFormAlert.Show
+  UserFormAlert.Label1.Caption = title
+  UserFormAlert.labelInfo.Caption = description
+  UserFormAlert.Repaint
+  Xhelper.waitMs (delay)
+  UserFormAlert.Hide
+
+End Function
