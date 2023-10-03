@@ -1,0 +1,63 @@
+<customUI xmlns="http://schemas.microsoft.com/office/2009/07/customui">
+  <ribbon startFromScratch="false">
+    <tabs>
+      <tab id="customTab" label="COMPRAS - (SINOSTEEL)">
+
+
+        <group id="purchase_order" label="Ordem de Compra">
+          <button id="btn1_purchase_order" label="Cadastrar Ordem de Compra" imageMso="SourceControlAddObjects" size="normal" onAction="MyRibbon.showAddPurchaseOrder" />
+          <button id="btn2_purchase_order" label="Pesquisar P.O" imageMso="OpenInfopathForm" size="normal" onAction="MyRibbon.showListPUrchaseOrder" />
+          <button id="btn3_purchase_order" label="Atualizar Doc. em Massa" imageMso="TableOfContentsAddTextGallery" size="normal" onAction="MyRibbon.showMassUpdateDocForm" />
+          <button id="btn4_purchase_order" label="Corrigir Status Recebimento" imageMso="TableOfContentsAddTextGallery" size="normal" onAction="MyRibbon.showUpdateDocStatusForm" />
+          <button id="btn5_purchase_order" label="Adm. Pasta de Arquivos" imageMso="CopyFolder" size="normal" onAction="MyRibbon.showMoveFilesForm" />
+          <button id="btn6_purchase_order" label="Pesquisar Doc." imageMso="ResearchPane" size="normal" onAction="MyRibbon.showFullSearchDocForm" />
+      
+        </group>
+
+        <group id="invoice" label="Notas Fiscais">
+          <button id="btn1_invoice" label="Solicitacao de Nota Fiscal" imageMso="SlideBackgroundReset" size="normal" onAction="MyRibbon.showAdmDocStatusForm" />
+          <button id="btn2_invoice" label="Notas a Emitir" imageMso="MessagePrevious" size="normal" onAction="MyRibbon.showDocsReleaseFromEngForm" />
+          <button id="btn3_invoice" label="Cadastro de Nota Fiscal" imageMso="Post" size="normal" onAction="MyRibbon.showConfirmPostGedForm" />
+          <button id="btn4_invoice" label="Lista de Nota Fiscal" imageMso="EditWorkflowTask" size="normal" onAction="MyRibbon.showDocsNotSubmittedForm" />
+
+        </group>
+
+        <group id="proforma" label="Proforma">
+          <button id="btn1_proforma" label="Nova Proforma" imageMso="RightArrow2" size="normal" onAction="MyRibbon.showNewproformaForm" />
+          <button id="btn2_proforma" label="Pesquisar proforma" imageMso="RightArrow2" size="normal" onAction="MyRibbon.showSearchproformaForm" />
+          <button id="btn3_proforma" label="Criar Destinatario" imageMso="RightArrow2" size="normal" onAction="MyRibbon.showCreateRecipient" />
+          <button id="btn4_proforma" label="Destinatarios" imageMso="RightArrow2" size="normal" onAction="MyRibbon.showAdminRecipient" />
+        
+        </group>
+
+     
+        <group id="reports" label="Relatorios">
+           <button id="btn1_reports" label="Gerador de Relatorios" imageMso="RightArrow2" size="normal" onAction="MyRibbon.showDocStatusReportForm" />
+           <button id="btn2_reports" label="Analizar Docs. na Rede" imageMso="RightArrow2" size="normal" onAction="MyRibbon.showDocAnaliseOnDriveReportForm" />
+           <button id="btn3_reports" label="Gerar LD" imageMso="CreateReport" size="normal" onAction="MyRibbon.showGenerateLDReport" />
+        </group>
+
+        
+        <group id="auth" label="Logar">
+          <button id="btn1_auth" label="Logar" imageMso="ShapeSmileyFace" size="normal" onAction="MyRibbon.showLoggingForm" />
+          <button id="btn2_auth" label="Sair" imageMso="CancelRequest" size="normal" onAction="MyRibbon.showLogoutForm" />
+          <button id="btn3_auth" label="Meus dados" imageMso="AddressBook" size="normal" onAction="MyRibbon.showUserInfoForm" />
+        </group>
+
+        <group id="user" label="Usuarios">
+          <button id="btn1_user" label="Catastrar" imageMso="DataFormAddRecord" size="normal" onAction="MyRibbon.showAddUserForm" />
+          <button id="btn2_user" label="Listar" imageMso="BulletListDefault" size="normal" onAction="MyRibbon.showAllUsersForm" />
+        </group>
+
+                
+        <group id="version" label="Aplicativo">
+          <button id="btn1_version" label="Email Adm." imageMso="FileNewEmail" size="normal" onAction="MyRibbon.showAddEmailCode" />
+          <button id="btn2_version" label="Cadastrar Fornecedores" imageMso="WorkgroupAdmin" size="normal" onAction="MyRibbon.showSupplierAdm" />
+          <button id="btn1_import" label="Cadastrar Romaneios" imageMso="XmlImport" size="normal" onAction="MyRibbon.showImportDocumentForm" />
+          <button id="btn3_version" label="Carregar Configs" imageMso="ComAddInsDialog" size="normal" onAction="MyRibbon.loadUserConfig" />
+          <button id="btn4_version" label="Sobre" imageMso="Info" size="normal" onAction="MyRibbon.showVersionForm" />
+        </group>
+      </tab>
+    </tabs>
+  </ribbon>
+</customUI>
